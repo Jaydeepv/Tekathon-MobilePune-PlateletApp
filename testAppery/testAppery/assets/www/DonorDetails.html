@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            DonorDetails
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                if (navigator.userAgent.match(/iP/i))
+                {
+                    $(window).bind('orientationchange', function(event)
+                    {
+                        $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+                    }).trigger('orientationchange');
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="DonorDetails" id="DonorDetails"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="DonorDetails_mobileheader" class="DonorDetails_mobileheader">
+                <h1 dsid="mobileheader">
+                    Donor Details
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="DonorDetails_mobilecontainer" name="mobilecontainer"
+            class="DonorDetails_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="DonorDetails.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="DonorDetails.js">
+                </script>
+                <!-- mobilegrid_2 -->
+                <div class="DonorDetails_mobilegrid_2_wrapper" data-wrapper-for="mobilegrid_2">
+                    <table id="DonorDetails_mobilegrid_2" class="DonorDetails_mobilegrid_2" dsid="mobilegrid_2"
+                    name="mobilegrid_2" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="DonorDetails_mobilegrid_2_row_0">
+                            <!-- mobilegridcell_3 -->
+                            <td id="DonorDetails_mobilegridcell_3" name="mobilegridcell_3" class="DonorDetails_mobilegridcell_3"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_7 -->
+                                    <div name="mobilelabel_7" id="DonorDetails_mobilelabel_7" dsid="mobilelabel_7" data-role="appery_label"
+                                    class="DonorDetails_mobilelabel_7">
+                                        First Name
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_4 -->
+                            <td id="DonorDetails_mobilegridcell_4" name="mobilegridcell_4" class="DonorDetails_mobilegridcell_4"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- inputfname -->
+                                    <div data-role="fieldcontain" class="DonorDetails_inputfname ">
+                                        <input type="text" name="inputfname" dsid="inputfname" value="" placeholder="First Name"
+                                        id="DonorDetails_inputfname" tabindex="2" multiple data-theme="b" class="DonorDetails_inputfname"
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_1">
+                            <!-- mobilegridcell_5 -->
+                            <td id="DonorDetails_mobilegridcell_5" name="mobilegridcell_5" class="DonorDetails_mobilegridcell_5"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lbllname -->
+                                    <div name="lbllname" id="DonorDetails_lbllname" dsid="lbllname" data-role="appery_label"
+                                    class="DonorDetails_lbllname">
+                                        Last Name
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_6 -->
+                            <td id="DonorDetails_mobilegridcell_6" name="mobilegridcell_6" class="DonorDetails_mobilegridcell_6"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- inputlname -->
+                                    <div data-role="fieldcontain" class="DonorDetails_inputlname ">
+                                        <input type="text" name="inputlname" dsid="inputlname" value="" placeholder="Last Name"
+                                        id="DonorDetails_inputlname" tabindex="3" multiple data-theme="b" class="DonorDetails_inputlname"
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_2">
+                            <!-- mobilegridcell_8 -->
+                            <td id="DonorDetails_mobilegridcell_8" name="mobilegridcell_8" class="DonorDetails_mobilegridcell_8"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lbldob -->
+                                    <div name="lbldob" id="DonorDetails_lbldob" dsid="lbldob" data-role="appery_label"
+                                    class="DonorDetails_lbldob">
+                                        Birth Date
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_9 -->
+                            <td id="DonorDetails_mobilegridcell_9" name="mobilegridcell_9" class="DonorDetails_mobilegridcell_9"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_44 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_44 ">
+                                        <input type="text" name="mobiletextinput_44" dsid="mobiletextinput_44" value=""
+                                        placeholder="Date" id="DonorDetails_mobiletextinput_44" tabindex="6" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_44" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_3">
+                            <!-- mobilegridcell_10 -->
+                            <td id="DonorDetails_mobilegridcell_10" name="mobilegridcell_10" class="DonorDetails_mobilegridcell_10"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lblbloodgroup -->
+                                    <div name="lblbloodgroup" id="DonorDetails_lblbloodgroup" dsid="lblbloodgroup" data-role="appery_label"
+                                    class="DonorDetails_lblbloodgroup">
+                                        Blood Group
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_11 -->
+                            <td id="DonorDetails_mobilegridcell_11" name="mobilegridcell_11" class="DonorDetails_mobilegridcell_11"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_45 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_45 ">
+                                        <input type="text" name="mobiletextinput_45" dsid="mobiletextinput_45" value=""
+                                        placeholder="" id="DonorDetails_mobiletextinput_45" tabindex="7" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_45" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_4">
+                            <!-- mobilegridcell_12 -->
+                            <td id="DonorDetails_mobilegridcell_12" name="mobilegridcell_12" class="DonorDetails_mobilegridcell_12"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lbladdress -->
+                                    <div name="lbladdress" id="DonorDetails_lbladdress" dsid="lbladdress" data-role="appery_label"
+                                    class="DonorDetails_lbladdress">
+                                        Address
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_13 -->
+                            <td id="DonorDetails_mobilegridcell_13" name="mobilegridcell_13" class="DonorDetails_mobilegridcell_13"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_46 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_46 ">
+                                        <input type="text" name="mobiletextinput_46" dsid="mobiletextinput_46" value=""
+                                        placeholder="" id="DonorDetails_mobiletextinput_46" tabindex="8" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_46" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_5">
+                            <!-- mobilegridcell_14 -->
+                            <td id="DonorDetails_mobilegridcell_14" name="mobilegridcell_14" class="DonorDetails_mobilegridcell_14"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lblarea -->
+                                    <div name="lblarea" id="DonorDetails_lblarea" dsid="lblarea" data-role="appery_label"
+                                    class="DonorDetails_lblarea">
+                                        Area
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_15 -->
+                            <td id="DonorDetails_mobilegridcell_15" name="mobilegridcell_15" class="DonorDetails_mobilegridcell_15"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_47 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_47 ">
+                                        <input type="text" name="mobiletextinput_47" dsid="mobiletextinput_47" value=""
+                                        placeholder="" id="DonorDetails_mobiletextinput_47" tabindex="9" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_47" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_6">
+                            <!-- mobilegridcell_16 -->
+                            <td id="DonorDetails_mobilegridcell_16" name="mobilegridcell_16" class="DonorDetails_mobilegridcell_16"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lblpincode -->
+                                    <div name="lblpincode" id="DonorDetails_lblpincode" dsid="lblpincode" data-role="appery_label"
+                                    class="DonorDetails_lblpincode">
+                                        Pincode
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_17 -->
+                            <td id="DonorDetails_mobilegridcell_17" name="mobilegridcell_17" class="DonorDetails_mobilegridcell_17"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_48 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_48 ">
+                                        <input type="text" name="mobiletextinput_48" dsid="mobiletextinput_48" value=""
+                                        placeholder="" id="DonorDetails_mobiletextinput_48" tabindex="10" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_48" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_7">
+                            <!-- mobilegridcell_18 -->
+                            <td id="DonorDetails_mobilegridcell_18" name="mobilegridcell_18" class="DonorDetails_mobilegridcell_18"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lblmobile -->
+                                    <div name="lblmobile" id="DonorDetails_lblmobile" dsid="lblmobile" data-role="appery_label"
+                                    class="DonorDetails_lblmobile">
+                                        Mobile No.
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_19 -->
+                            <td id="DonorDetails_mobilegridcell_19" name="mobilegridcell_19" class="DonorDetails_mobilegridcell_19"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_49 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_49 ">
+                                        <input type="text" name="mobiletextinput_49" dsid="mobiletextinput_49" value=""
+                                        placeholder="" id="DonorDetails_mobiletextinput_49" tabindex="11" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_49" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_8">
+                            <!-- mobilegridcell_20 -->
+                            <td id="DonorDetails_mobilegridcell_20" name="mobilegridcell_20" class="DonorDetails_mobilegridcell_20"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lbllandline -->
+                                    <div name="lbllandline" id="DonorDetails_lbllandline" dsid="lbllandline" data-role="appery_label"
+                                    class="DonorDetails_lbllandline">
+                                        Landline
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_21 -->
+                            <td id="DonorDetails_mobilegridcell_21" name="mobilegridcell_21" class="DonorDetails_mobilegridcell_21"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_50 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_50 ">
+                                        <input type="text" name="mobiletextinput_50" dsid="mobiletextinput_50" value=""
+                                        placeholder="" id="DonorDetails_mobiletextinput_50" tabindex="12" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_50" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_9">
+                            <!-- mobilegridcell_22 -->
+                            <td id="DonorDetails_mobilegridcell_22" name="mobilegridcell_22" class="DonorDetails_mobilegridcell_22"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lblemail -->
+                                    <div name="lblemail" id="DonorDetails_lblemail" dsid="lblemail" data-role="appery_label"
+                                    class="DonorDetails_lblemail">
+                                        Email ID
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_23 -->
+                            <td id="DonorDetails_mobilegridcell_23" name="mobilegridcell_23" class="DonorDetails_mobilegridcell_23"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_10">
+                            <!-- mobilegridcell_24 -->
+                            <td id="DonorDetails_mobilegridcell_24" name="mobilegridcell_24" class="DonorDetails_mobilegridcell_24"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lblstatus -->
+                                    <div name="lblstatus" id="DonorDetails_lblstatus" dsid="lblstatus" data-role="appery_label"
+                                    class="DonorDetails_lblstatus">
+                                        Status
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_25 -->
+                            <td id="DonorDetails_mobilegridcell_25" name="mobilegridcell_25" class="DonorDetails_mobilegridcell_25"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_51 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_51 ">
+                                        <input type="text" name="mobiletextinput_51" dsid="mobiletextinput_51" value=""
+                                        placeholder="" id="DonorDetails_mobiletextinput_51" tabindex="13" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_51" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="DonorDetails_mobilegrid_2_row_11">
+                            <!-- mobilegridcell_26 -->
+                            <td id="DonorDetails_mobilegridcell_26" name="mobilegridcell_26" class="DonorDetails_mobilegridcell_26"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lblisactive -->
+                                    <div name="lblisactive" id="DonorDetails_lblisactive" dsid="lblisactive" data-role="appery_label"
+                                    class="DonorDetails_lblisactive">
+                                        Is Active
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_27 -->
+                            <td id="DonorDetails_mobilegridcell_27" name="mobilegridcell_27" class="DonorDetails_mobilegridcell_27"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobiletextinput_52 -->
+                                    <div data-role="fieldcontain" class="DonorDetails_mobiletextinput_52 ">
+                                        <input type="text" name="mobiletextinput_52" dsid="mobiletextinput_52" value=""
+                                        placeholder="" id="DonorDetails_mobiletextinput_52" tabindex="14" multiple data-theme="b"
+                                        class="DonorDetails_mobiletextinput_52" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- btncall --><!--
+                --><a data-role="button" name="btncall" dsid="btncall" class="DonorDetails_btncall"
+                id="DonorDetails_btncall" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="4">
+                Call
+                </a><!--
+                --><!-- btnsms --><!--
+                --><a data-role="button" name="btnsms" dsid="btnsms" class="DonorDetails_btnsms" id="DonorDetails_btnsms"
+                data-corners="true" data-icon="none" data-iconpos='nowhere' x-apple-data-detectors="false"
+                data-mini="false" data-theme="b" tabindex="5">
+                SMS
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="DonorDetails_mobilefooter"
+            name="mobilefooter" dsid="mobilefooter" id="DonorDetails_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            Register
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                if (navigator.userAgent.match(/iP/i))
+                {
+                    $(window).bind('orientationchange', function(event)
+                    {
+                        $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+                    }).trigger('orientationchange');
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="Register" id="Register" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="Register_mobileheader" class="Register_mobileheader">
+                <h1 dsid="mobileheader">
+                    Registration
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="Register_mobilecontainer" name="mobilecontainer" class="Register_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="Register.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="Register.js">
+                </script>
+                <!-- mobilegrid_2 -->
+                <div class="Register_mobilegrid_2_wrapper" data-wrapper-for="mobilegrid_2">
+                    <table id="Register_mobilegrid_2" class="Register_mobilegrid_2" dsid="mobilegrid_2"
+                    name="mobilegrid_2" cellpadding=0 cellspacing=0>
+                        <col style="width:auto;" />
+                        <col style="width:auto;" />
+                        <tr class="Register_mobilegrid_2_row_0">
+                            <!-- mobilegridcell_3 -->
+                            <td id="Register_mobilegridcell_3" name="mobilegridcell_3" class="Register_mobilegridcell_3"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- mobilelabel_13 -->
+                                    <div name="mobilelabel_13" id="Register_mobilelabel_13" dsid="mobilelabel_13" data-role="appery_label"
+                                    class="Register_mobilelabel_13">
+                                        Name
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_4 -->
+                            <td id="Register_mobilegridcell_4" name="mobilegridcell_4" class="Register_mobilegridcell_4"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- inputname -->
+                                    <div data-role="fieldcontain" class="Register_inputname ">
+                                        <input type="text" name="inputname" dsid="inputname" value="" placeholder="" id="Register_inputname"
+                                        tabindex="1" multiple data-theme="b" class="Register_inputname" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Register_mobilegrid_2_row_1">
+                            <!-- mobilegridcell_5 -->
+                            <td id="Register_mobilegridcell_5" name="mobilegridcell_5" class="Register_mobilegridcell_5"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- lblmobile -->
+                                    <div name="lblmobile" id="Register_lblmobile" dsid="lblmobile" data-role="appery_label"
+                                    class="Register_lblmobile">
+                                        Mobile
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_6 -->
+                            <td id="Register_mobilegridcell_6" name="mobilegridcell_6" class="Register_mobilegridcell_6"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                    <!-- inputmobile -->
+                                    <div data-role="fieldcontain" class="Register_inputmobile ">
+                                        <input type="text" name="inputmobile" dsid="inputmobile" value="" placeholder=""
+                                        id="Register_inputmobile" tabindex="3" multiple data-theme="b" class="Register_inputmobile"
+                                        />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Register_mobilegrid_2_row_2">
+                            <!-- mobilegridcell_7 -->
+                            <td id="Register_mobilegridcell_7" name="mobilegridcell_7" class="Register_mobilegridcell_7"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_8 -->
+                            <td id="Register_mobilegridcell_8" name="mobilegridcell_8" class="Register_mobilegridcell_8"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Register_mobilegrid_2_row_3">
+                            <!-- mobilegridcell_9 -->
+                            <td id="Register_mobilegridcell_9" name="mobilegridcell_9" class="Register_mobilegridcell_9"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_10 -->
+                            <td id="Register_mobilegridcell_10" name="mobilegridcell_10" class="Register_mobilegridcell_10"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="Register_mobilegrid_2_row_4">
+                            <!-- mobilegridcell_11 -->
+                            <td id="Register_mobilegridcell_11" name="mobilegridcell_11" class="Register_mobilegridcell_11"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                            <!-- mobilegridcell_12 -->
+                            <td id="Register_mobilegridcell_12" name="mobilegridcell_12" class="Register_mobilegridcell_12"
+                            colspan=1 rowspan=1>
+                                <div class="cell-wrapper">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- mobilebutton_15 --><!--
+                --><a data-role="button" name="mobilebutton_15" dsid="mobilebutton_15" class="Register_mobilebutton_15"
+                id="Register_mobilebutton_15" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="2">
+                Register
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="Register_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="Register_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

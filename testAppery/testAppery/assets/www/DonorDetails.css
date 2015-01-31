@@ -1,0 +1,445 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.DonorDetails_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilegrid_2 */
+.DonorDetails_mobilegrid_2 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.DonorDetails_mobilegrid_2_wrapper {
+
+}
+.DonorDetails_mobilegrid_2 > tr > td {
+	vertical-align: top;
+}
+.DonorDetails_mobilegrid_2_row_0, .DonorDetails_mobilegrid_2_row_0 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_1, .DonorDetails_mobilegrid_2_row_1 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_2, .DonorDetails_mobilegrid_2_row_2 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_3, .DonorDetails_mobilegrid_2_row_3 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_4, .DonorDetails_mobilegrid_2_row_4 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_5, .DonorDetails_mobilegrid_2_row_5 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_6, .DonorDetails_mobilegrid_2_row_6 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_7, .DonorDetails_mobilegrid_2_row_7 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_8, .DonorDetails_mobilegrid_2_row_8 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_9, .DonorDetails_mobilegrid_2_row_9 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_10, .DonorDetails_mobilegrid_2_row_10 > td {
+	height: 30px
+}
+.DonorDetails_mobilegrid_2_row_11, .DonorDetails_mobilegrid_2_row_11 > td {
+	height: 30px
+}
+/* mobilegridcell_3 */
+.DonorDetails_mobilegridcell_3 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_3 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilelabel_7 */
+.DonorDetails_mobilelabel_7 {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_4 */
+.DonorDetails_mobilegridcell_4 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_4 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* inputfname */
+.DonorDetails_inputfname {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_5 */
+.DonorDetails_mobilegridcell_5 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_5 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lbllname */
+.DonorDetails_lbllname {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_6 */
+.DonorDetails_mobilegridcell_6 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_6 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* inputlname */
+.DonorDetails_inputlname {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_8 */
+.DonorDetails_mobilegridcell_8 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_8 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lbldob */
+.DonorDetails_lbldob {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_9 */
+.DonorDetails_mobilegridcell_9 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_9 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_44 */
+.DonorDetails_mobiletextinput_44 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_10 */
+.DonorDetails_mobilegridcell_10 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_10 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lblbloodgroup */
+.DonorDetails_lblbloodgroup {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_11 */
+.DonorDetails_mobilegridcell_11 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_11 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_45 */
+.DonorDetails_mobiletextinput_45 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_12 */
+.DonorDetails_mobilegridcell_12 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_12 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lbladdress */
+.DonorDetails_lbladdress {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_13 */
+.DonorDetails_mobilegridcell_13 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_46 */
+.DonorDetails_mobiletextinput_46 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_14 */
+.DonorDetails_mobilegridcell_14 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_14 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lblarea */
+.DonorDetails_lblarea {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_15 */
+.DonorDetails_mobilegridcell_15 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_15 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_47 */
+.DonorDetails_mobiletextinput_47 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_16 */
+.DonorDetails_mobilegridcell_16 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_16 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lblpincode */
+.DonorDetails_lblpincode {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_17 */
+.DonorDetails_mobilegridcell_17 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_17 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_48 */
+.DonorDetails_mobiletextinput_48 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_18 */
+.DonorDetails_mobilegridcell_18 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_18 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lblmobile */
+.DonorDetails_lblmobile {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_19 */
+.DonorDetails_mobilegridcell_19 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_19 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_49 */
+.DonorDetails_mobiletextinput_49 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_20 */
+.DonorDetails_mobilegridcell_20 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_20 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lbllandline */
+.DonorDetails_lbllandline {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_21 */
+.DonorDetails_mobilegridcell_21 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_21 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_50 */
+.DonorDetails_mobiletextinput_50 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_22 */
+.DonorDetails_mobilegridcell_22 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_22 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lblemail */
+.DonorDetails_lblemail {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_23 */
+.DonorDetails_mobilegridcell_23 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_23 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobilegridcell_24 */
+.DonorDetails_mobilegridcell_24 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_24 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lblstatus */
+.DonorDetails_lblstatus {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_25 */
+.DonorDetails_mobilegridcell_25 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_25 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_51 */
+.DonorDetails_mobiletextinput_51 {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilegridcell_26 */
+.DonorDetails_mobilegridcell_26 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_26 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lblisactive */
+.DonorDetails_lblisactive {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilegridcell_27 */
+.DonorDetails_mobilegridcell_27 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.DonorDetails_mobilegridcell_27 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* mobiletextinput_52 */
+.DonorDetails_mobiletextinput_52 {
+	margin: 4px 0px 4px 0px;
+}
+/* btncall */
+#DonorDetails_btncall {
+
+}
+.ui-btn.DonorDetails_btncall {
+	margin: 4px 5px 4px 5px;
+}
+/* btnsms */
+#DonorDetails_btnsms {
+
+}
+.ui-btn.DonorDetails_btnsms {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.DonorDetails_mobilefooter {
+	min-height:38px;
+}

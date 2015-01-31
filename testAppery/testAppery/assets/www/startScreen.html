@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.4/jquery.mobile.structure-1.4.4.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/underscore/underscore.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-2.1.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+                if (navigator.userAgent.match(/iP/i))
+                {
+                    $(window).bind('orientationchange', function(event)
+                    {
+                        $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+                    }).trigger('orientationchange');
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.4/jquery.mobile-1.4.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/component-manager.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/mapping-impl.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/entity-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/storage-api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/model.js">
+        </script>
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/databaseUtils.js">
+        </script>
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="startScreen_mobileheader" class="startScreen_mobileheader">
+                <h1 dsid="mobileheader">
+                    Search Donor
+                </h1>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="startScreen_mobilecontainer" name="mobilecontainer"
+            class="startScreen_mobilecontainer ui-content" dsid="mobilecontainer" data-theme="b">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- inputpin -->
+                <div data-role="fieldcontain" class="startScreen_inputpin ">
+                    <input type="text" name="inputpin" dsid="inputpin" value="" placeholder="Enter pincode"
+                    id="startScreen_inputpin" tabindex="17" multiple data-theme="b" class="startScreen_inputpin"
+                    />
+                </div>
+                <!-- mobilebutton_53 --><!--
+                --><a data-role="button" name="mobilebutton_53" dsid="mobilebutton_53" class="startScreen_mobilebutton_53"
+                id="startScreen_mobilebutton_53" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="13">
+                Search
+                </a><!--
+                --><!-- mobilelist_4 -->
+                <ul data-role="listview" id="startScreen_mobilelist_4" class="startScreen_mobilelist_4"
+                name="mobilelist_4" dsid="mobilelist_4" data-inset="true" data-theme="b" data-divider-theme="b"
+                data-count-theme="b" style="" data-split-icon="carat-r">
+                    <!-- mobilelistitem_5 -->
+                    <li id="startScreen_mobilelistitem_5" name="mobilelistitem_5" dsid="mobilelistitem_5"
+                    tabindex="3" data-icon="carat-r" class="startScreen_mobilelistitem_5  ui-btn ui-btn-icon-right ui-icon-carat-r">
+                        <div class="ui-li-static-container ui-btn">
+                            <!-- mobilegrid_11 -->
+                            <div class="startScreen_mobilegrid_11_wrapper" data-wrapper-for="mobilegrid_11">
+                                <table id="startScreen_mobilegrid_11" class="startScreen_mobilegrid_11" dsid="mobilegrid_11"
+                                name="mobilegrid_11" cellpadding=0 cellspacing=0>
+                                    <col style="width:auto;" />
+                                    <col style="width:auto;" />
+                                    <tr class="startScreen_mobilegrid_11_row_0">
+                                        <!-- mobilegridcell_12 -->
+                                        <td id="startScreen_mobilegridcell_12" name="mobilegridcell_12" class="startScreen_mobilegridcell_12"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- lblfname -->
+                                                <div name="lblfname" id="startScreen_lblfname" dsid="lblfname" data-role="appery_label"
+                                                class="startScreen_lblfname">
+                                                    Name
+                                                </div>
+                                                <!-- lblbloodgroup -->
+                                                <div name="lblbloodgroup" id="startScreen_lblbloodgroup" dsid="lblbloodgroup" data-role="appery_label"
+                                                class="startScreen_lblbloodgroup">
+                                                    Blood Group
+                                                </div>
+                                                <!-- lblpincode -->
+                                                <div name="lblpincode" id="startScreen_lblpincode" dsid="lblpincode" data-role="appery_label"
+                                                class="startScreen_lblpincode">
+                                                    Pincode
+                                                </div>
+                                                <!-- lbllastdonated -->
+                                                <div name="lbllastdonated" id="startScreen_lbllastdonated" dsid="lbllastdonated"
+                                                data-role="appery_label" class="startScreen_lbllastdonated">
+                                                    Last Donated
+                                                </div>
+                                                <!-- lblmobile -->
+                                                <div name="lblmobile" id="startScreen_lblmobile" dsid="lblmobile" data-role="appery_label"
+                                                class="startScreen_lblmobile">
+                                                    Mobile No.
+                                                </div>
+                                                <!-- mobilebutton_31 --><!--
+                                                --><a data-role="button" name="mobilebutton_31" dsid="mobilebutton_31" class="startScreen_mobilebutton_31"
+                                                id="startScreen_mobilebutton_31" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                                x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="6">
+                                                Call
+                                                </a>
+                                            </div>
+                                        </td>
+                                        <!-- mobilegridcell_13 -->
+                                        <td id="startScreen_mobilegridcell_13" name="mobilegridcell_13" class="startScreen_mobilegridcell_13"
+                                        colspan=1 rowspan=1>
+                                            <div class="cell-wrapper">
+                                                <!-- showname -->
+                                                <div name="showname" id="startScreen_showname" dsid="showname" data-role="appery_label"
+                                                class="startScreen_showname">
+                                                </div>
+                                                <!-- showbloodgroup -->
+                                                <div name="showbloodgroup" id="startScreen_showbloodgroup" dsid="showbloodgroup"
+                                                data-role="appery_label" class="startScreen_showbloodgroup">
+                                                </div>
+                                                <!-- showpincode -->
+                                                <div name="showpincode" id="startScreen_showpincode" dsid="showpincode" data-role="appery_label"
+                                                class="startScreen_showpincode">
+                                                </div>
+                                                <!-- showlastdonated -->
+                                                <div name="showlastdonated" id="startScreen_showlastdonated" dsid="showlastdonated"
+                                                data-role="appery_label" class="startScreen_showlastdonated">
+                                                </div>
+                                                <!-- showmobile -->
+                                                <div name="showmobile" id="startScreen_showmobile" dsid="showmobile" data-role="appery_label"
+                                                class="startScreen_showmobile">
+                                                </div>
+                                                <!-- mobilebutton_33 --><!--
+                                                --><a data-role="button" name="mobilebutton_33" dsid="mobilebutton_33" class="startScreen_mobilebutton_33"
+                                                id="startScreen_mobilebutton_33" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                                                x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="7">
+                                                SMS
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- btbregisterdonor --><!--
+                --><a data-role="button" name="btbregisterdonor" dsid="btbregisterdonor" class="startScreen_btbregisterdonor"
+                id="startScreen_btbregisterdonor" data-corners="true" data-icon="none" data-iconpos='nowhere'
+                x-apple-data-detectors="false" data-mini="false" data-theme="b" tabindex="15">
+                Register Donor
+                </a>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="startScreen_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

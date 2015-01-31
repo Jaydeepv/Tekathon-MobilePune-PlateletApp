@@ -1,0 +1,175 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.4/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilecontainer */
+.ui-content.startScreen_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* inputpin */
+.startScreen_inputpin {
+	margin: 4px 0px 4px 0px;
+}
+/* mobilebutton_53 */
+#startScreen_mobilebutton_53 {
+
+}
+.ui-btn.startScreen_mobilebutton_53 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilelist_4 */
+.ui-page .startScreen_mobilelist_4 {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_5 */
+.ui-mobile-viewport ul[data-role="listview"] li.startScreen_mobilelistitem_5 {
+	padding: 0;
+	margin: 0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.startScreen_mobilelistitem_5 .ui-li-static-container {
+	padding: 0px 0px 4px 0px;
+	padding-right: 41px;
+	padding-left: 0px;
+	min-height: 1em;
+	border-width:0;
+}
+.ui-mobile-viewport ul[data-role="listview"] li.startScreen_mobilelistitem_5.ui-icon-none .ui-li-static-container {
+	padding-right: 0px; /* consider nothing */
+}
+/* mobilelistitembutton_6 */
+.startScreen_mobilelistitembutton_6 {
+
+}
+/* mobilegrid_11 */
+.startScreen_mobilegrid_11 {
+	height: auto;
+	width:100%;
+	margin: 4px 0px 4px 0px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.startScreen_mobilegrid_11_wrapper {
+
+}
+.startScreen_mobilegrid_11 > tr > td {
+	vertical-align: top;
+}
+.startScreen_mobilegrid_11_row_0, .startScreen_mobilegrid_11_row_0 > td {
+	height: 30px
+}
+/* mobilegridcell_12 */
+.startScreen_mobilegridcell_12 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_12 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* lblfname */
+.startScreen_lblfname {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lblbloodgroup */
+.startScreen_lblbloodgroup {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lblpincode */
+.startScreen_lblpincode {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lbllastdonated */
+.startScreen_lbllastdonated {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* lblmobile */
+.startScreen_lblmobile {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_31 */
+#startScreen_mobilebutton_31 {
+
+}
+.ui-btn.startScreen_mobilebutton_31 {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilegridcell_13 */
+.startScreen_mobilegridcell_13 {
+	height:30px !important;
+	width:auto;
+	padding: 2px 2px 2px 2px;
+}
+.startScreen_mobilegridcell_13 > .cell-wrapper {
+	padding: 0;
+	margin: 0;
+}
+/* showname */
+.startScreen_showname {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* showbloodgroup */
+.startScreen_showbloodgroup {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* showpincode */
+.startScreen_showpincode {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* showlastdonated */
+.startScreen_showlastdonated {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* showmobile */
+.startScreen_showmobile {
+	text-decoration: none; font-weight: normal; font-style: italic; text-align: left; font-family: Helvetica; font-size: 16px;
+	margin: 4px 0px 4px 0px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+/* mobilebutton_33 */
+#startScreen_mobilebutton_33 {
+
+}
+.ui-btn.startScreen_mobilebutton_33 {
+	margin: 4px 5px 4px 5px;
+}
+/* btbregisterdonor */
+#startScreen_btbregisterdonor {
+
+}
+.ui-btn.startScreen_btbregisterdonor {
+	margin: 4px 5px 4px 5px;
+}
+/* mobilefooter */
+.startScreen_mobilefooter {
+	min-height:38px;
+}
